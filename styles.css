@@ -1,0 +1,93 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #1d1d1d; /* Dark background */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: transparent; /* Transparent Background */
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: color 0.3s, transform 0.3s, background-color 0.3s;
+    border-radius: 30px;
+}
+
+nav ul li a:hover {
+    color: #9e1b32;  /* Deep Red Color on Hover */
+    background-color: rgba(255, 255, 255, 0.1);  /* Slight White Background on Hover */
+    transform: scale(1.1);  /* Slight Zoom In Effect */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #080808, #113b4e);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: transparent;
+    color: #9e1b32;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid #9e1b32;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #9e1b32;
+    color: #fff;
+    transform: scale(1.1);
+}
