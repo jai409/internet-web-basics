@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lifestyle Vibes</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFB22C;
+      color: #ffffff;
+    }
+    nav {
+      background: #3b6dc6;
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: #FFB22C; }
+    .container {
+      padding: 20px;
+      background-color: #854836;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      color: #fff;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 10px;
+    }
+    .carousel img {
+      flex: 0 0 auto;
+      width: 150px;
+      height: auto;
+      border: 4px solid white;
+      border-radius: 12px;
+      scroll-snap-align: center;
+      transition: transform 0.3s ease;
+    }
+    .carousel img:hover { transform: scale(1.05); }
+    p { line-height: 1.6; }
+    ul { margin-top: 20px; padding-left: 20px; }
+    ul li { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="HOMEPAGE.html">Home</a>
+    <a href="IMAGE GALLERY.html">Lifestyle Gallery</a>
+    <a href="ABOUT.html">About</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <div class="container" id="home">
+    <h1>Welcome to Our Lifestyle Hub</h1>
+    <p>Step into a space where wellness, style, and soul collide. Curated for the dreamers, the go-getters, and everyone in between—this is your digital vibe check.</p>
+    <p>We're bringing lifestyle to life with visuals, vibes, and value. So whether you're mood-boarding your next trip or planning your next glow-up—we got you.</p>
+  </div>
+
+  <div class="container" id="gallery">
+    <h1>Latest Vibes</h1>
+    <div class="carousel">
+      <img src="https://i.pinimg.com/736x/3b/71/6f/3b716f07fb92a010113635d03024983a.jpg" alt="Chill Time">
+      <img src="https://i.pinimg.com/736x/61/b1/81/61b18155979e5474f281d19d5d526beb.jpg" alt="City Fit">
+      <img src="https://i.pinimg.com/736x/84/23/85/84238584e80a0ccc3e77f14dfaa015d7.jpg" alt="Clean Eating">
+      <img src="https://i.pinimg.com/736x/fb/34/9b/fb349b0a32fd9a2d788bf8914d67ee4f.jpg" alt="Morning Zen">
+      <img src="https://i.pinimg.com/736x/90/7b/7c/907b7cdfbff3574a20a243b7762bbc49.jpg" alt="Getaway">
+    </div>
+    <p>New drops every week — because your lifestyle deserves main character energy 24/7.</p>
+    <ul>
+      <li>Wellness inspo that fits your daily grind</li>
+      <li>Minimalist fashion, maximal impact</li>
+      <li>Rituals, routines & realness</li>
+      <li>Visuals made for the moodboard</li>
+      <li>Fresh drops weekly—stay tuned</li>
+    </ul>
+  </div>
+</body>
+</html>

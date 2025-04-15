@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lifestyle Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFB22C;
+    }
+    nav {
+      background: #3b6dc6;
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .filter-container {
+      padding: 20px;
+      text-align: center;
+    }
+    .filter-container select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 2px solid #3b6dc6;
+      background-color: white;
+      color: #3b6dc6;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .card {
+      border: 2px solid white;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: #854836;
+      color: #fff;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: scale(1.05); }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .card button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #3b6dc6;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .card button:hover { background: #2c58a0; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="HOMEPAGE.html">Home</a>
+    <a href="IMAGE GALLERY.html">Lifestyle Gallery</a>
+    <a href="ABOUT.html">About</a>
+    <a href="CONTACT.html">Contact Us</a>
+  </nav>
+
+  <div class="filter-container">
+    <label for="mood-filter">Filter by Mood:</label>
+    <select id="mood-filter">
+      <option value="all">All</option>
+      <option value="chill">Chill</option>
+      <option value="cozy">Cozy</option>
+      <option value="minimal">Minimal</option>
+      <option value="productive">Productive</option>
+    </select>
+  </div>
+
+  <div class="gallery">
+    <div class="card" data-mood="chill">
+      <img src="https://i.pinimg.com/736x/77/60/a7/7760a71d40f9a40445f2e6543b5f047d.jpg" alt="Slow Living">
+      <p>Slow Living</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="cozy">
+      <img src="https://i.pinimg.com/736x/6a/7c/cb/6a7ccbd98e5507770ae101961550b3fe.jpg" alt="Coffee Break">
+      <p>Coffee Break</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="cozy">
+      <img src="https://i.pinimg.com/736x/55/65/76/556576bb20a91040c7c01f326d19fdc8.jpg" alt="Reading Nook">
+      <p>Reading Nook</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="minimal">
+      <img src="https://i.pinimg.com/736x/8d/62/85/8d6285202ae1064c97f6fb74a9eeb049.jpg" alt="Minimalist Desk">
+      <p>Minimalist Desk</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="chill">
+      <img src="https://i.pinimg.com/736x/80/dd/e1/80dde15342d7d35f75821df52e6d01aa.jpg" alt="Sunny Window">
+      <p>Sunny Window</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="minimal">
+      <img src="https://i.pinimg.com/736x/f4/c4/d3/f4c4d329a07e0abe0cb9eb43a27c0453.jpg" alt="Aesthetic Wardrobe">
+      <p>Aesthetic Wardrobe</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="productive">
+      <img src="https://i.pinimg.com/736x/a5/a4/ab/a5a4ab2132ad1d13b93a4908df23d48c.jpg" alt="Morning Routine">
+      <p>Morning Routine</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="chill">
+      <img src="https://i.pinimg.com/474x/21/a6/48/21a64857b62a2ed1d2217d9d1c801b69.jpg" alt="Walk in the Park">
+      <p>Walk in the Park</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="productive">
+      <img src="https://i.pinimg.com/736x/04/c4/f2/04c4f2472a07eebc7b7c2eba50b48453.jpg" alt="Studio Vibes">
+      <p>Studio Vibes</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="chill">
+      <img src="https://i.pinimg.com/736x/77/60/a7/7760a71d40f9a40445f2e6543b5f047d.jpg" alt="Chill Sunset">
+      <p>Chill Sunset</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="minimal">
+      <img src="https://i.pinimg.com/736x/6a/7c/cb/6a7ccbd98e5507770ae101961550b3fe.jpg" alt="Indoor Plants">
+      <p>Indoor Plants</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="cozy">
+      <img src="https://i.pinimg.com/736x/55/65/76/556576bb20a91040c7c01f326d19fdc8.jpg" alt="Cozy Bedroom">
+      <p>Cozy Bedroom</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="chill">
+      <img src="https://i.pinimg.com/736x/8d/62/85/8d6285202ae1064c97f6fb74a9eeb049.jpg" alt="Peaceful Corner">
+      <p>Peaceful Corner</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="minimal">
+      <img src="https://i.pinimg.com/736x/80/dd/e1/80dde15342d7d35f75821df52e6d01aa.jpg" alt="Light & Space">
+      <p>Light & Space</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="productive">
+      <img src="https://i.pinimg.com/736x/f4/c4/d3/f4c4d329a07e0abe0cb9eb43a27c0453.jpg" alt="Self-Care Vibes">
+      <p>Self-Care Vibes</p>
+      <button>View More</button>
+    </div>
+    <div class="card" data-mood="minimal">
+      <img src="https://i.pinimg.com/736x/a5/a4/ab/a5a4ab2132ad1d13b93a4908df23d48c.jpg" alt="Clean Living">
+      <p>Clean Living</p>
+      <button>View More</button>
+    </div>
+  </div>
+
+  <script>
+    const filter = document.getElementById("mood-filter");
+    const cards = document.querySelectorAll(".card");
+    filter.addEventListener("change", () => {
+      const mood = filter.value;
+      cards.forEach(card => {
+        const cardMood = card.getAttribute("data-mood");
+        if (mood === "all" || cardMood === mood) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

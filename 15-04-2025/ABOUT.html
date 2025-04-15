@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFB22C;
+      color: #ffffff;
+    }
+    nav {
+      background: #3b6dc6;
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #854836;
+      border-radius: 10px;
+    }
+    h1, h2 { color: #ffffff; }
+    .intro { margin-bottom: 30px; }
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      width: 250px;
+      border: 2px solid white;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #3b6dc6;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: scale(1.05); }
+    .card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
+    .card p { padding: 10px; }
+    .contact-info {
+      background: #3b6dc6;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="HOMEPAGE.html">Home</a>
+    <a href="IMAGE GALLERY.html">Lifestyle Gallery</a>
+    <a href="ABOUT.html">About</a>
+    <a href="CONTACT.html">Contact Us</a>
+  </nav>
+
+  <div class="container">
+    <h1>About Us</h1>
+    <div class="intro">
+      <p>Welcome to our lifestyle blog! I am <strong>Jaijal George</strong>, a lifestyle enthusiast who loves sharing tips, ideas, and experiences that inspire a fulfilling life.</p>
+      <p>Lifestyle is about creating memorable experiences and embracing positivity. Join us on this vibrant journey!</p>
+    </div>
+    <div class="gallery">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/2a/d3/47/2ad3472c79cfa22dc915d6d02e394fc9.jpg" alt="Wellness">
+        <p>Wellness tips for your best self.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/a5/20/c0/a520c0ace385b1ecf60dda62206fc044.jpg" alt="Travel">
+        <p>Travel experiences that inspire.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/71/ef/f4/71eff4dc2a1c9a92f29b83ad8cb3fa67.jpg" alt="Decor">
+        <p>Home decor that reflects you.</p>
+      </div>
+    </div>
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> jaijalgeorge@example.com</p>
+      <p><strong>Phone:</strong> 25708851</p>
+      <p><strong>Location:</strong> Riga, Latvia</p>
+    </div>
+  </div>
+</body>
+</html>
